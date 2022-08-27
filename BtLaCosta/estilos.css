@@ -25,10 +25,18 @@ header {
 a {
   text-decoration: none;
   display: inline-block;
-  color: whitesmoke;
   padding: 0px;
   margin: 20px;
   font-size: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: #001f74;
+  text-shadow: 3px 3px 3px #322185;
+}
+
+ol {
+  padding: 3px;
 }
 
 li {
@@ -383,61 +391,6 @@ main h1 {
     height: 350px;
   }
 }
-@media (max-width: 500px) {
-  .imgPrincipal {
-    display: flex;
-    padding: 30px;
-    width: 300px;
-    height: 200px;
-    border-radius: 1cm;
-    margin: 80px auto;
-    justify-content: center;
-  }
-  .chicanot {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    border-radius: 1cm;
-    border: 3px solid black;
-    margin: 50px auto;
-    justify-content: center;
-  }
-  h2 {
-    font-size: 20px;
-    padding: 50px;
-  }
-  span {
-    font-size: 20px;
-  }
-  .bienvenido {
-    color: #001f74;
-  }
-  .carouselImg {
-    width: 250px;
-    height: 150px;
-  }
-  .ofertaP {
-    font-size: 15px;
-    font-weight: lighter;
-    color: black;
-    padding: 10px;
-    margin-right: 150px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    border: 1px outset black;
-  }
-  .ofertaImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 250px;
-    height: 150px;
-    padding: 10px;
-    background-color: rgb(133, 161, 237);
-  }
-}
 @media (max-width: 768px) {
   .imgPrincipal {
     display: flex;
@@ -472,6 +425,101 @@ main h1 {
   }
   span {
     font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .imgPrincipal {
+    display: flex;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 1cm;
+    margin: 50px auto;
+    justify-content: center;
+  }
+  .chicanot {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    border-radius: 1cm;
+    border: 3px solid black;
+    margin: 50px auto;
+    justify-content: center;
+  }
+  h2 {
+    padding: 20px;
+    font-size: 20px;
+  }
+  span {
+    font-size: 20px;
+  }
+  .bienvenido {
+    color: #001f74;
+  }
+  .carouselImg {
+    width: 350px;
+    height: 200px;
+  }
+  .ofertaP {
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    padding: 10px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px outset black;
+  }
+  .ofertaImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(133, 161, 237);
+  }
+}
+@media (max-width: 350px) {
+  main h1 {
+    font-size: 30px;
+  }
+  .imgPrincipal {
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+  }
+  .chicanot {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+  }
+  .container-img-list {
+    margin-bottom: 0;
+  }
+  a {
+    font-size: 15px;
+    margin: 10px;
+  }
+  h2 {
+    text-align: justify;
+    font-size: 18px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px;
+  }
+  .container-img-list li {
+    font-size: 18px;
+    margin: 5px;
+  }
+  .info h3 {
+    margin: 10px 30px;
+    font-size: 15px;
   }
 }
 
