@@ -404,11 +404,9 @@ main h1 {
   .chicanot {
     width: 350px;
     height: 250px;
-    display: flex;
     border-radius: 1cm;
     border: 3px solid black;
     margin: 50px auto;
-    justify-content: center;
   }
   .carouselImg {
     width: 450px;
@@ -492,9 +490,8 @@ main h1 {
     height: 150px;
   }
   .chicanot {
-    width: 250px;
-    height: 150px;
-    margin: 10px;
+    width: 200px;
+    height: 140px;
   }
   .container-img-list {
     margin-bottom: 0;
@@ -509,9 +506,9 @@ main h1 {
     margin: 0;
   }
   h3 {
-    font-size: 18px;
-    text-align: justify;
-    margin: 15px;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0 15px;
   }
   .container-img-list li {
     font-size: 18px;
