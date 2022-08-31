@@ -17,11 +17,6 @@ header{
     width: 100%;
 }
 
-header{
-    grid-area: header;
-    background-color: azure
-}
-
 a{
     text-decoration: none;
     display: inline-block;
@@ -53,11 +48,6 @@ ul li:hover{
     display: inline-block;
     transform: scale(2);
     color: whitesmoke;
-}
-
-nav{
-    grid-area: nav;
-    background-color: black;
 }
 
 nav ul{
@@ -127,11 +117,6 @@ span{
 footer{
     padding: 10px;
     margin-top: 100px;
-    background-color: black;
-}
-
-footer{
-    grid-area: footer;
     background-color: black;
 }
 
@@ -274,51 +259,6 @@ $botones: (
     @include flex-row-center;
 }
 
-
-// SECCIÓN GALERIA:
-.main{
-    display: grid;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 1fr;
-    gap:10px;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "galeria"
-    "footer";
-}
-
-.galeria{
-    grid-area: galeria;
-    background-color: rgba(94, 151, 249, 0.991);
-}
-
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: azure;
-    padding: 30px;
-}
-
-.divImg{
-    padding: 20px;
-    margin: 10px;
-}
-
-.imgGaleria{
-    width: 290px;
-    height: 190px;
-    background-color: azure;
-    position: relative;
-}
-
-.imgGaleria:hover{
-    transform: scale(1.3)
-}
-// CIERRE SECCIÓN GALERIA
-
 // SECCIÓN DEMANDA
 .demandaImg{
     display: flex;
@@ -386,39 +326,31 @@ $botones: (
 }
 // CIERRE SECCIÓN CONTACTO
 
+// SECCIÓN GALERIA:
+.galeria{
+    display: grid;
+    gap: 20px;
+}
+
+.imgGaleria {
+    width: 300px;
+    height: 169px;
+}
+
+// .imgGaleria:hover{
+//     transform: scale(1.3)
+// }
+// CIERRE SECCIÓN GALERIA
+
 // MEDIA MIN-WIDTH
 @media (min-width:500px){
-        .main{
-            margin: 0;
-            grid-template-areas: 
-            "nav nav"
-            "header header"
-            "galeria galeria"
-            "footer footer";
-        }
-        .imgGaleria{
-            width: 350px;
-            height: 300px;
-        }
+        .galeria {
+            grid-template-columns: repeat(3, 1fr);
+        }  
 }
     
 @media (min-width:768px){
-        .main{
-            margin-bottom: 1.5em;
-            grid-template-columns: 1fr 4fr 1fr;
-            grid-template-areas: 
-            "nav nav nav"
-            "header header header"
-            "galeria galeria galeria"
-            "footer footer footer";
-        }
-        
-        .galeria{
-            background-color: rgba(94, 151, 249, 0.991);
-        }
-    
        .imgGaleria{
-            
             width: 200px;
             height: 150px;
         }    
@@ -434,20 +366,10 @@ $botones: (
 
     
 @media(min-width:1024px){
-         
-            .main{
-                margin-bottom: 1.5em;
-                grid-template-columns: 1fr  1fr;
-                grid-template-areas: 
-                "nav nav nav"
-                "header header header"
-                "galeria galeria galeria"
-                "footer footer footer";
-            }
-            .imgGaleria{
-                width: 400px;
-                height: 350px;
-            }
+        .imgGaleria{
+            width: 400px;
+            height: 350px;
+        }
 }    
 // CIERRE MEDIA MIN-WIDTH
 
