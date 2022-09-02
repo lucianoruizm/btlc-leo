@@ -102,7 +102,6 @@ p {
   margin-top: 50px;
   margin-left: 50px;
   margin-bottom: 50px;
-  border: 1px outset black;
 }
 
 span {
@@ -279,34 +278,99 @@ main h1 {
   background-color: rgb(133, 161, 237);
 }
 
+.anuncios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ofertaP {
+  display: flex;
+  flex-direction: row-reverse;
   font-size: 18px;
   font-weight: lighter;
-  color: black;
+  background: #f1f1f1;
   padding: 10px;
-  margin-right: 150px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  border: 1px outset black;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.text-oferta {
+  margin: 10px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #37649e;
+  color: #f1f1f1;
+  margin: 50px 50px;
+  border-radius: 50px;
+  padding: 50px;
+  box-shadow: 10px 1px 20px 9px rgba(163, 163, 212, 0.61);
+}
+
+.contact-section input {
+  /* From https://css.glass */
+  background: rgba(28, 41, 129, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(28, 41, 129, 0.3);
+  color: #f1f1f1;
+}
+
+.contact-section textarea {
+  background: rgba(28, 41, 129, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(28, 41, 129, 0.3);
+  color: #f1f1f1;
+  resize: none;
+  width: 200px;
+}
+
+label {
+  display: inline;
+}
+
+.form-container {
+  text-align: center;
 }
 
 .contacto {
-  width: 350px;
+  width: 250px;
   height: 180px;
   padding: 20px;
   margin: 10px;
 }
 
+@media (min-width: 500px) {
+  .contact-section {
+    margin: 50px 100px;
+    padding: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-section {
+    margin: 50px 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-section {
+    margin: 50px 300px;
+  }
+}
 .galeria {
   display: grid;
-  gap: 10px;
-  justify-items: center;
+  gap: 20px;
 }
 
 .imgGaleria {
-  width: 210px;
-  height: 160px;
+  width: 300px;
+  height: 169px;
 }
 
 @media (min-width: 500px) {
@@ -320,8 +384,8 @@ main h1 {
 }
 @media (min-width: 768px) {
   .imgGaleria {
-    width: 200px;
-    height: 150px;
+    width: 241px;
+    height: 195px;
   }
 }
 @media (min-width: 992px) {
@@ -331,12 +395,10 @@ main h1 {
 }
 @media (min-width: 1024px) {
   .imgGaleria {
-    width: 330px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
   }
 }
-
-
 @media (max-width: 768px) {
   .imgPrincipal {
     display: flex;
@@ -464,6 +526,4 @@ main h1 {
     margin: 10px 30px;
     font-size: 15px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
